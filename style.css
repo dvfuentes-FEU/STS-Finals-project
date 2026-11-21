@@ -1,0 +1,56 @@
+:root {
+  --lg-green: #4f9a68;
+  --lg-green-dark: #3b7a50;
+  --lg-cream: #f7f3ee;
+  --lg-ink: #2a2f2b;
+
+  /* Point Bootstrap at the palette */
+  --bs-body-bg: var(--lg-cream);
+  --bs-body-color: var(--lg-ink);
+  --bs-link-color: var(--lg-green-dark);
+  --bs-link-hover-color: var(--lg-green);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+
+/* Header */
+.site-header { background: var(--lg-green); color: #fff; }
+.brand { color: #fff; text-decoration: none; display: inline-block; }
+.brand-logo { height: 130px; width: auto; max-width: 100%; margin: 20px}
+.brand-text {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .02em;
+}
+
+.search-box .form-control,
+.search-box .btn {
+  background: var(--lg-cream);
+  border: 0;
+  border-radius: 0;
+}
+.search-box .btn { color: var(--lg-green-dark); }
+
+/* Nav */
+.site-nav {
+  background: var(--lg-cream);
+  border-bottom: 1px solid var(--lg-green);
+  padding: 0;
+}
+.site-nav .nav-link {
+  color: var(--lg-green-dark);
+  padding: .9rem 1rem;
+  text-align: center;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus-visible { background: rgba(79, 154, 104, .12); }
+@media (min-width: 768px) {
+  .site-nav .nav-item + .nav-item { border-left: 1px solid var(--lg-green); }
+}
+
+
+.site-footer { background: var(--lg-green); color: #fff; padding-bottom: 4.5rem; }
+
+
+
